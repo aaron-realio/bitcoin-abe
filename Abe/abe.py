@@ -1911,9 +1911,8 @@ def serve(store):
                 'QUERY_STRING': parsed.query
                 }, start_response)
     elif args.host or args.port:
-        # HTTP server.
-        if args.host is None:
-            args.host = "localhost"
+        import socket
+        args.host = socket.gethostbyname(socket.gethostname())
         from wsgiref.simple_server import make_server
         port = int(args.port or 80)
         httpd = make_server(args.host, port, abe)

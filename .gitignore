@@ -5,3 +5,7 @@ MANIFEST
 build
 dist
 .idea/
+venv
+confs/abe-stage.conf
+confs/
+Makefile

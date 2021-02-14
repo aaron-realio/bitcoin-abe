@@ -1,4 +1,4 @@
-FROM python:2-alpine
+FROM python:3-alpine
 
 # install python
 RUN apk update && apk add --no-cache bash openssl-dev openssl libffi-dev build-base postgresql-libs musl-dev postgresql-dev curl git

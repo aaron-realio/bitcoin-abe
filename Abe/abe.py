@@ -19,7 +19,7 @@ import sys
 import os
 import optparse
 import re
-from html import escape
+from cgi import escape
 import posixpath
 import wsgiref.util
 import time
